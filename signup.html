@@ -5,60 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create A signup Form</title>
+
+    <style>
+        #register-form{
+            width: 300px;
+            background-color: white;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .input-label{
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 12px;
+        }
+
+      .input-item{
+            width: 100%;
+        }
+        #terms-check{
+            margin-top: 12px;
+            margin-bottom: 18px;
+
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: lightblue;">
+    <h1 style="text-align: center;">Signup</h1>
     
-    <form action="">
+    <form id="register-form" method="GET">
 
-        <h1>Signup</h1>
+            <div>
+                <p class="input-label">Full Name:</p> 
+                <input class="input-item" type="text" name="fullname">             
+            </div>
 
-        <div>
-                Full Name: <br>
-                <input type="text" name="fname"> <br>
-                
-        </div>
+            <div>
+                <p class="input-label">Email:</p>
+                <input class="input-item" type="email" name="email" id=""> 
+            </div>
 
-        <div>
-            Email: <br>
-            <input type="email" name="email" id=""> <br>
-        </div>
+            <div>
+                <p class="input-label">Password</p>
+                <input class="input-item" type="password" name="password" id="">  
+            </div>
 
-        <div>
-            Password: <br>
-            <input type="password" name="password" id="">  <br>
+            <div>
+                <p class="input-label">Confirm Password: </p>
+                <input class="input-item" type="password" name="cpassword" id=""> 
+            </div>
 
-        </div>
+            <div>
+                <p class="input-label"> Gnder:</p>
+                <input type="radio" name="male" id=""> Male </input>
+                <input type="radio" name="female" id=""> FeMale </input>
+                <input type="radio" name="other" id=""> Other </input>
+            </div>
 
-        <div>
-            Confirm Password: <br>
-            <input type="password" name="cpassword" id=""> <br>
-        </div>
+            <div>
+                <p class="input-label">Security Question:</p>
+                <select class="input-item" name="security-question" id="">
+                    <option value="-first-pet-name">What was your First Pet Name</option>
+                    <option value="first-job"> What was your First Job</option>
+                    <option value="nick-name">what is your nick name</option>
+                </select>
+            </div>
 
-<div>
-    Gnder: <br>
-    <input type="radio" name="male" id=""> Male </input>
-    <input type="radio" name="female" id=""> FeMale </input>
-    <input type="radio" name="other" id=""> Other </input>
-</div>
+            <div>
+                <textarea class="input-item" name="answer" id="" cols="30" rows="6"></textarea>
+            </div>
 
-<div>
-    Security Question: <br>
-    <select name="security-question" id="">
-        <option value="-first-pet-name">What was your First Pet Name</option>
-        <option value="first-job"> What was your First Job</option>
-        <option value="nick-name">what is your nick name</option>
-    </select>
-</div>
+            <div>
+                <input  type="checkbox" name="terms-conditions" id="terms-check" value="accept">I Agree to Accept Terms and Conditions
+            </div>
+            <input type="button" value="Register">
+   </form>
 
-<div>
-    <textarea name="answer" id="" cols="30" rows="6"></textarea>
-</div>
-
-<div>
-    <input type="checkbox" name="terms-conditions" id="" value="accept">I Agree to Accept Terms and Conditions
-</div>
-
-<input type="button" value="Register">
-    </form>
 </body>
 </html>
