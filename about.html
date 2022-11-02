@@ -4,27 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Links </title>
+    <title>Table Assignments </title>
 
     <style>
-        .menu-item{
-            display: inline;
-            padding: 12px 16px;
-            background-color: lightblue;
+
+        table {
+            width: 600px;
+            text-align: left;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
         }
+   
+  table, td,th{
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    padding: 8px;
+    line-height: 1.3;
+  }
+
+  th{
+    background-color: lightblue;
+  }
+  .label{
+    font-weight: 600;
+  }
+   body{
+    background-color: #F2F6FF;
+   }
 
     </style>
   
 </head>
 
-<body style="margin: 0;">
+<body>
+   
+<table>
 
-<ul style="list-style-type:none;">
-    <li class="menu-item"><a href="/index.html">Home</a></li>
-    <li class="menu-item"><a href="/about.html">About</a></li>
-    <li class="menu-item"><a href="/contact.html">Contact</a></li>
-</ul>
+    <tr>
+        <th colspan="3">INVOICE#12345ABC</th>
+        <th>18 JUL 2019</th>
+    </tr>
 
-<h1>About page</h1>
+    <tr>
+        <td colspan="2">
+            <span class="label">Pay To:</span> <br>
+            The tech Park <br>
+            123 willow Street <br>
+            Bowlvar, LA 567892
+        </td>
+        <td colspan="2">
+           <span class="label">Customer:</span> <br>
+           Jhon LARK <br>
+           Jumy APARTMENTS <br>
+           276 Main Street <br>
+           Bolvard LA, 567892
+
+        </td>
+    </tr>
+
+    <tr>
+        <th>Name/Description</th>
+        <th>QTY</th>
+        <th>MRP</th>
+        <th>Amount</th>
+    </tr>
+
+    <tr>
+        <td>Biryani</td>
+        <td>3</td>
+        <td>400</td>
+        <td>1200</td>
+    </tr>
+
+    <tr>
+        <td>Chekolete Shake</td>
+        <td>3</td>
+        <td>200</td>
+        <td>600</td>
+    </tr>
+
+    <tr>
+        <th colspan="3">SUBTOTAL</th>
+        <td>1800</td>
+    </tr>
+
+    <tr>
+        <th colspan="2">TAX</th>
+        <td>10%</td>
+        <td>180</td>
+    </tr>
+
+    <tr>
+        <th colspan="3">Ground Total</th>
+        <td>rs 16248</td>
+    </tr>
+
+</table>
+
 </body>
 </html>
