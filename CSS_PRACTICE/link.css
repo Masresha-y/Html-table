@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+
+#topbar{
+    background-color: lightblue;
+    padding: 24px 48px;
+}
+
+.menu-item{
+    font-size: 24px;
+    margin-right: 24px;
+    color: black;
+    text-decoration: none;
+}
+.menu-item, .menu-item:link, .menu-item:visited {
+    color: #3109d1;
+    text-decoration: none;
+    background-color: #778899;
+  }
+
+  .menu-item:hover{
+    color: red;
+    }
+
+    .menu-item:visited{
+        color: green;
+    }
+    
+.menu-item:active{
+    color: purple;
+} 
+
+
+a:link {color:#FFFAFA;}      
+a:visited {color:#FFFAFA;}  
+a:hover {color:#FFFAFA;}  
+a:active {color:#FFFAFA;}  
+
+
+
+
+
+
+
+
+
+
