@@ -1,0 +1,28 @@
+.image-item{
+    width: 400px;
+    height:300px;
+}
+
+.image-wrapper{
+    display: inline;
+}
+
+.menu-item{
+display: block;
+/* display: none; */
+/* visibility: hidden; */
+}
+
+#span1{
+    background-color: lightblue;
+    width: 100px;
+    height: 200px;
+}
+
+#span2{
+    background-color: lightblue;
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+  
+}
